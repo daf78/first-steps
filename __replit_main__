@@ -1,0 +1,42 @@
+// < Hacking Task #warmUp >");
+
+var battery = 100; //how much battery your laptop has left
+var hackedTerminals = 0; //how many terminals you have hacked
+var username = prompt('What is your username:', 'username here...');
+var welcomeMessage =
+  'fSociety distro is booting... Please enter your username: ';
+
+console.log(welcomeMessage + username);
+
+// <Hacking Task> #1_");
+
+var password = 'CapitalismDidNothingWrong'; // insert Ray's password here
+var wipedData = false;
+
+if (password === 'CapitalismDidNothingWrong') {
+  wipedData = true;
+  console.log('All data has been deleted!');
+  hackedTerminals++;
+} else {
+  wipedData = false;
+}
+
+battery -= 25;
+
+if (battery > 0) {
+  console.log(
+    "I've still got " + battery + " % battery. Let's hack some more targets!"
+  );
+} else {
+  console.log(
+    "I'm out of battery. I was able to hack " + hackedTerminals + ' terminals'
+  );
+}
+
+if (hackedTerminals === 4) {
+  console.log("I've hacked all the 4 terminals! Elliot will be proud.");
+}
+
+// <Hacking Task> #2_");
+
+//to be continued...
